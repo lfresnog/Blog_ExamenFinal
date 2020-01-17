@@ -141,8 +141,11 @@ mutation{
 
 ```js
 mutation{
-  readAll(mail:"test",token:"33eac680-3907-11ea-a902-cf74bb8af46c"){
+  readAll(mail:"test1",token:"aa181140-3912-11ea-8fad-cf2b5b050357"){
     title
+    author{
+      mail
+    }
   }
 }
 ```
@@ -151,7 +154,7 @@ mutation{
 
 ```js
 mutation{
-  readAuthor(mail:"test1",token:"33eac680-3907-11ea-a902-cf74bb8af46c",author:"test"){
+  readAuthor(mail:"test1",token:"aa181140-3912-11ea-8fad-cf2b5b050357",author:"test"){
     title
     author{
       mail
