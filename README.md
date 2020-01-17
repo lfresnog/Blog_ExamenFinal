@@ -1,6 +1,6 @@
-# Practice 5 
+# Examen Final
 
-Football Matchs DataBase
+Blog
 
 ![GitHub](https://img.shields.io/github/license/lfresnog/Blog_ExamenFinal)
 ![GitHub Release Date](https://img.shields.io/github/release-date/lfresnog/Blog_ExamenFinal)
@@ -21,6 +21,39 @@ To run the programme in the server 4004
 ```js
 npm start
 ```
+
+## Schema.graphql
+
+```js
+type Mutation {
+    signUp(mail:String!,pwd:String!,author:Boolean!):User!
+    logIn(mail:String!,pwd:String!):User!
+    logOut(mail:String!,token:String!):User!
+    removeUser(mail:String!,pwd:String!,token:String!):User!
+    readAll(mail:String!,token:String!):[Publication]!
+    readAuthor(mail:String!,token:String!,author:String!):[Publication]!
+    readPublication(mail:String!,token:String!,title:String!):[Publication]!
+    addPublication(mail:String!,token:String!,title:String!,description:String!):Publication!
+    removePublication(mail:String!,token:String!,title:String!):Publication!
+}
+type Subscription {
+    tellMe(mail:String!,token:String!,author:String!):String!
+}
+type User {
+    _id: ID!
+    mail: String!
+    pwd: String!
+    author: Boolean!
+    token: String
+}
+type Publication {
+    _id: ID!
+    title: String!
+    description: String!
+    author: User!
+}
+```
+
 ## Query
 
 - ok Test
