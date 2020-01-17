@@ -43,7 +43,7 @@ const Mutation = {
 
         const updated = await usersCollection.findOneAndUpdate(
             {mail,token},
-            {$set:{token:""}},
+            {$set:{token:undefined}},
             {returnOriginal: false}
         );
         if(!updated.value) throw new Error("Invalid Mail/Token");
