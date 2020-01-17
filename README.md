@@ -23,6 +23,7 @@ npm start
 ```
 
 ## Schema.graphql
+En este ejercicio, he decidido utizar el mail como variable única identificativa del usuario en vez de _id
 
 ```js
 type Mutation {
