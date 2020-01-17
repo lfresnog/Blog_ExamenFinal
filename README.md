@@ -201,6 +201,4 @@ subscription{
 
 ## ⚖️ License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/JaimeDordio/rickymorty/blob/master/LICENSE) file for details
-
-**[⬆ back to top](#features)**
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/lfresnog/Blog_ExamenFinal/LICENSE) file for details
